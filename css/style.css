@@ -1,4 +1,117 @@
-h1 {
-    color: red;
+* {
     font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #252525;
+    color: #FFF;
+}
+
+.primary-bg-color {
+    background-color: #252525;
+}
+
+.secondary-bg-color {
+    background-color: #C09578;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.primary-color {
+    color: #C09578;
+}
+
+.secondary-color {
+    color: #626262;
+}
+
+.ligh-color {
+    color: #FCF5EB;
+}
+
+/* NAVBAR */
+#navbar .navbar-nav {
+    flex-direction: row;
+    gap: 2em;
+}
+
+#navbar a,
+#navbar button {
+    color: #FFF;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar i {
+    font-size: 20px;
+}
+
+#navbar span {
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #EF3636;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        text-align: left;
+        width: auto;
+    }
+}
+
+#navbar-items {
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #navbar-items {
+        width: 80%;
+        display: flex;
+    }
+}
+
+#search-form {
+    width: 100%;
+    margin: 2em 0;
+    border: 2px solid #626262;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+    #search-form {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+#search-form input,
+#search-form input::placeholder {
+    background-color: transparent;
+    color: #FFF;
+    border: none;
+}
+
+#search-form input:focus {
+    box-shadow: none;
 }
